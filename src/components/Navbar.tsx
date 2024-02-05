@@ -68,8 +68,8 @@ export default function Navbar({ location }: Props) {
 
   function handleCurrentLocation() {
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(async (postiion) => {
-        const { latitude, longitude } = postiion.coords;
+      navigator.geolocation.getCurrentPosition(async (position) => {
+        const { latitude, longitude } = position.coords;
         try {
           setLoadingCity(true);
           const response = await axios.get(
@@ -110,7 +110,7 @@ export default function Navbar({ location }: Props) {
                 onSubmit={handleSubmitSearch}
                 onChange={(e) => handleInputChange(e.target.value)}
               />
-              <SuggetionBox
+              <SuggestionBox
                 {...{
                   showSuggestions,
                   suggestions,
@@ -131,7 +131,7 @@ export default function Navbar({ location }: Props) {
             onSubmit={handleSubmitSearch}
             onChange={(e) => handleInputChange(e.target.value)}
           />
-          <SuggetionBox
+          <SuggestionBox
             {...{
               showSuggestions,
               suggestions,
@@ -145,7 +145,7 @@ export default function Navbar({ location }: Props) {
   );
 }
 
-function SuggetionBox({
+function SuggestionBox({
   showSuggestions,
   suggestions,
   handleSuggestionClick,

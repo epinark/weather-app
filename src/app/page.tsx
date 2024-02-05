@@ -2,7 +2,6 @@
 "use client";
 
 import Container from "@/components/Container";
-import ForecastWeatherDetail from "@/components/ForecastWeatherDetail";
 import Navbar from "@/components/Navbar";
 import WeatherDetails from "@/components/WeatherDetails";
 import WeatherIcon from "@/components/WeatherIcon";
@@ -17,6 +16,7 @@ import { loadingCityAtom, placeAtom } from "./atom";
 import { useAtom } from "jotai";
 import { useEffect } from "react";
 import { convertKelvinToCelsius } from "@/utils/convertKelvinToCelcius";
+import ForecastWeatherDetail from "@/components/ForecastWeatherDetail";
 
 interface WeatherDetail {
   dt: number;
