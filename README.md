@@ -2,12 +2,11 @@
 Weather App is a weather application built with TypeScript, Next.js and Tailwind CSS.
 
 ## Built with 🛠️
-[![My Skills](https://skillicons.dev/icons?i=ts)](https://www.typescriptlang.org/)
-[![My Skills](https://skillicons.dev/icons?i=html)(https://www.w3.org/html/)
-[![My Skills](https://skillicons.dev/icons?i=react)(https://react.dev/)
-[![My Skills](https://skillicons.dev/icons?i=nextjs)
-[![My Skills](https://skillicons.dev/icons?i=tailwind,vercel)
-
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=ts,react,nextjs,tailwind,vercel" />
+  </a>
+</p>
 - Next.js 
 - React.js
 - Tailwind CSS
